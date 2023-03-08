@@ -1,12 +1,13 @@
-//import { useState } from 'react'
+
 import './App.css'
+import Card from './Card/card'
 
 function App() {
 
 
   return (
     <div className="App">
-
+      <Card />
     </div>
   )
 }
