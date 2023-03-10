@@ -33,7 +33,7 @@ export const App = () => {
     <div className="App">
       <h1>Elige un color</h1>
       <form onSubmit={handleSubmit}>        
-      /* Input Nombre */
+    {/* Nombre*/}
         <p>
           <label htmlFor="name">Nombre</label>
           <input type="text"
@@ -45,7 +45,7 @@ export const App = () => {
           />
         </p>
         <p>
-        /* Input Color */
+        {/* Color */}
           <label htmlFor="color">Color</label> 
           <input type="text"
             id="color"
