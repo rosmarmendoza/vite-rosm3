@@ -7,6 +7,9 @@ export const App = () => {
   /* Props*/
   const [name, setName] = useState("");
   const [color, setColor] = useState("");
+  const [error, setError] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
   
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -54,7 +57,11 @@ export const App = () => {
         </p>
         <input type="submit" value="Enviar" />
       </form>
-      /* Manejo de error */
+      {formSubmitted &&
+        (error ?
+          <p>Por favor chequea que la información sea correcta</p>
+          :
+          <Card name={name} colorHex={color} />)}
     </div>
   );
 }
