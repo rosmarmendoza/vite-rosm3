@@ -62,6 +62,8 @@ export const App = () => {
           <p>Por favor chequea que la información sea correcta</p>
           :
           <Card name={name} colorHex={color} />)}
+          
+         
     </div>
   );
 }
